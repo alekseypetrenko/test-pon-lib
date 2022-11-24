@@ -1,5 +1,14 @@
 {
   "name": "test-pon-lib",
+  "files": ["dist"],
+  "main": "./dist/pon-test-lib.umd.js",
+  "module": "./dist/pon-test-lib.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/pon-test-lib.es.js",
+      "require": "./dist/pon-test-lib.umd.js"
+    }
+  },
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
@@ -8,6 +17,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "path": "^0.12.7",
     "vue": "^3.2.41"
   },
   "devDependencies": {

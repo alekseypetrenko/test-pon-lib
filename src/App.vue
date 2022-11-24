@@ -1,9 +1,9 @@
 <template>
-  <test-button />
+  <PonTestLink />
+  <PonTestHeader />
+  <PonTestButton />
 </template>
 
-<script setup>
-import TestButton from "./components/TestButton.vue";
-</script>
+<script></script>
 
 <style scoped></style>
