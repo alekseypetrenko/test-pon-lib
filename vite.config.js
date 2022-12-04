@@ -8,7 +8,7 @@ import vue from "@vitejs/plugin-vue";
 export default defineConfig({
   build: {
     lib: {
-      entry: path.resolve(__dirname, "src/index.js"),
+      entry: path.resolve(__dirname, "src/components/index.js"),
       name: "pon-test-lib",
       fileName: (format) => `pon-test-lib.${format}.js`,
     },
